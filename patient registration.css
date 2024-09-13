@@ -1,0 +1,307 @@
+
+body {
+    background-color: rgb(9, 128, 128);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #333;
+}
+
+/* Header and navigation bar styles */
+header {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar:hover {
+    background-color: #e0e0e0;
+}
+
+.website-logo {
+    display: flex;
+    align-items: center;
+}
+
+.website-logo img {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    
+}
+
+.website-logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #065d5d;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.nav1 .Hotline {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #065d5d;
+}
+
+.nav1 .button1 {
+    margin-right: 10px;
+    padding: 6px 12px;
+    background-color: #065d5d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.nav1 .button1:hover {
+    background-color: #048383;
+}
+
+.search-bar input {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+    box-shadow: 0 0 5px rgba(0, 150, 150, 0.5);
+}
+
+.search-bar button {
+    padding: 6px 12px;
+    background-color: #065d5d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #048383;
+}
+
+.profile-pic img {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-left: 10px;
+
+}
+
+/* Navigation links */
+.navigations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navigations a {
+    color: #065d5d;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigations a:hover {
+    background-color: #065d5d;
+    color: white;
+}
+/*-----------Patient Registration Form--------------*/
+
+
+.patient-registration-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 450px;
+    margin: 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.patient-registration-form h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #065d5d;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.patient-registration-form .form {
+    margin-bottom: 20px;
+}
+
+.patient-registration-form label {
+    display: block;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.patient-registration-form input,
+.patient-registration-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  
+}
+
+.patient-registration-form input:focus,
+.patient-registration-form select:focus {
+    border-color: #065d5d;
+    box-shadow: 0 0 5px rgba(6, 93, 93, 0.3);
+    outline: none;
+}
+
+.patient-registration-form .button3 {
+    width: 100%;
+    padding: 12px;
+    background-color:#065d5d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.patient-registration-form .button3:hover {
+    background-color: #043b3b;
+    color: white;
+}
+
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(200, 200, 200);
+}
+
+.footer-bar {
+    padding-left: 100px;
+}
+
+.icons-container {
+    display: flex;
+    gap: 50px;
+    padding-right: 80px;
+}
+
+.icons-container i {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.icons-container i:hover {
+    color: #ff0000;
+}
+@media only screen and (max-width: 768px) {
+    /* Header and Navigation */
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .website-logo h1 {
+        font-size: 20px;
+    }
+
+    .nav1 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .Hotline, .search-bar, .profile-pic {
+        margin: 5px 0;
+    }
+
+    .navigations {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navigations a {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .patient-registration-form{
+        width: 360px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .footer-bar {
+        padding-left: 0;
+    }
+
+    .icons-container {
+        gap: 20px;
+        padding-right: 0;
+    }
+    .patient-registration-form {
+        padding: 10px;
+    }
+
+    .patient-registration-form h2 {
+        font-size: 20px;
+    }
+
+    .form.info label {
+        font-size: 14px;
+    }
+
+    .form.info input,
+    .form-info select {
+        font-size: 14px;
+    }
+
+    .button3 {
+        font-size: 14px;
+    }
+}
