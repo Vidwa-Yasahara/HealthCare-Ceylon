@@ -2,7 +2,7 @@
     "name": "HealthCare Ceylon",
     "short_name": "HCC",
     "description": "A hospital providing exceptional medical services and patient care.",
-    "start_url": "/index.html",
+    "start_url": "https://vidwa-yasahara.github.io/HealthCare-Ceylon/",
     "display": "standalone",
     "background_color": "#ADD8E6",
     "theme_color": "#ffffff",
